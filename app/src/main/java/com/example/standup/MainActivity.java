@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String toastMessage;
                 if (isChecked) {
-                    long repeatInterval = 30 * 1000; // 30 seconds
-                    long triggerTime = SystemClock.elapsedRealtime() + 30 * 1000; // fire after 30 seconds
+                    long repeatInterval = 30 * 1000;
+                    long triggerTime = SystemClock.elapsedRealtime() + 30 * 1000; 
 
                     if (alarmManager != null) {
                         alarmManager.setInexactRepeating(
